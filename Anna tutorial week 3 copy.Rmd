@@ -12,7 +12,8 @@ output: pdf_document
 #Email:annadl.li@mail.utoronto.ca
 #Date: Jan 22, 2021
 ```
-
+## Github
+github repository link is https://github.com/annadlli/STA304-week3tutorial.git
 ```{r setup, include = FALSE}
 library(tidyverse) # A collection of data-related packages
 library(janitor) # Helps clean datasets
@@ -41,7 +42,7 @@ cleaned_dataset |> group_by(time_period) |>
 ggplot(aes(x=time_period, y=sum)) +
 geom_col() + 
 labs(x="Month",y= "Total number of marriage licenses registered", 
-     title ="Toronto's 2011-2021 total number of marriage licenses per month")+
+     title ="Torontos' 2011-2021 total number of marriage licenses per month")+
   scale_x_discrete(limits = month.abb)+
   theme_classic()
 
@@ -58,4 +59,7 @@ Sharla Gelfand (2020). opendatatoronto: Access the City of Toronto Open Data Por
 citation()
 citation("opendatatoronto")
 ```
+
+
+
 
